@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Lee {{ title }}{% endblock %}
+
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+{% endblock %}
+
+{% block body %}
+    <h1>{{ title }}</h1>
+
+    <p>iPhone es una línea de teléfonos inteligentes diseñada y comercializada por Apple Inc.
+        Ejecuta el sistema operativo móvil iOS antes conocido como "iPhone OS" hasta mediados de 2010.
+    </p>
+
+    <p>El iPhone dispone de una cámara de fotos de 12 megapíxeles y un reproductor de música (equivalente al del iPod) además
+        de software para enviar y recibir mensajes de texto y mensajes de voz. También ofrece servicios de Internet como leer correo
+        electrónico, cargar páginas web y conectividad por Wi-Fi. La primera generación de teléfonos eran GSM cuatribanda con la tecnología
+        EDGE; la segunda generación ya incluía UMTS con HSDPA.;[2] la sexta generación ya incluía 4G LTE.
+    </p>
+
+
+    <h2>Comentarios ({{ comments|length }})</h2>
+
+    <ul>
+        {% for comment in comments %}
+            <li>{{ comment }}</li>
+        {% endfor %}
+    </ul>
+{% endblock body %}
+
+{% block javascripts %}
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+{% endblock %}

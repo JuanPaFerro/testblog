@@ -1,0 +1,33 @@
+{% extends 'base.html.twig'%}
+
+{% block title %}Nuestra Portada!{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/styles.css">
+{% endblock %}
+
+{% block barra %}
+
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div id="logo" class="col-xs-3">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div id="logIn" class="col-xs-1 offset-sm-7">
+                <a href="#" id="login-link" class="">LogIn</a>
+            </div>
+            <div id="register" class="col-xs-1">
+                <a href="#" id="register-link" class="">Register</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+{% endblock %}
