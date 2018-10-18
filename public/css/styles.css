@@ -1,55 +1,112 @@
-.menu{
-    margin: 0 !important;
-}
+
 
 body{
-    display: table;
     width: 100%;
     height: 100vh;
-    background: url(../images/subscribe-bg.jpg) top center fixed;
+    background: url(/images/test2.jpg) top center fixed;
     background-size: cover;
 }
 
-#logo img{
-    height: 60px;
-}
 
-#logIn{
-    text-align: right ;
-    margin-top: 18px;
-
-}
-#register{
-    text-align: right ;
-    margin-top: 18px;
-}
-
-#login-link{
-    color: white;
-    border: 2px solid white;
-    padding: 4px;
-    font-size: 18px;
-    text-decoration: none;
-    transition: 500ms;
-}
-#register-link{
-    color: white;
-    border: 2px solid white;
-    padding: 4px;
-    font-size: 18px;
-    text-decoration: none;
-    transition: 500ms;
-}
-
-#login-link:hover{
-    /* background-color: #00F23E; */
+a{
     border-color:transparent;
-    color: rgba(51, 46, 46, 0.322);
+    color: rgba(51, 46, 46, 0.8);
+    transition: 400ms;
+}
+
+a:hover{
+    padding: 4px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.registro{
+    margin-top: 100px;
+}
+
+.frase-home{
+    background-color: rgba(0,0,0, 0.1);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.frase{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#sp1{
+    font-family: Cambria;
+}
+#sp2{
+    font-size: 13px ;
+}
+
+
+.user-img{
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+.homepage-list{
+    margin-top: 80px;
+}
+.homepage-list-item{
+    color: white;
+}
+
+.homepage-content{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.homepage-content a{
     font-size: 20px;
 }
-#register-link:hover{
-    /*  background-color: #00F23E; */
-    border-color: transparent;
-    color: rgba(0, 0, 0, 0.384);
-    font-size: 20px;
+
+.homepage-content li{
+    font-size: 25px;
+}
+
+.homepage-content h1{
+    color: white;
+
+}
+.homepage-content h3{
+    color: lightgray;
+}
+
+.homepage-content a:hover{
+    font-size: 24px;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5%;
+}
+
+.register-button{
+    border:2px solid dimgray;
+    padding: 5px;
+}
+
+.navbar{
+    background-color: rgba(0,0,0, 0.1);
+}
+
+.navbar-brand{
+    height: 80px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: white;
+    font-size: 22px;
+}
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link {
+    color: dimgray;
+    font-size: 18px;
 }

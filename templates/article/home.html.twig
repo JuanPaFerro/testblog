@@ -4,27 +4,37 @@
 
 {% block stylesheets %}
     <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/styles.css">
 {% endblock %}
 
-{% block barra %}
-
-{% endblock %}
 
 {% block body %}
+<div class="homepage-content container">
+    <h1>Bienvenido a nuestro Blog</h1>
+    <h3>Quieres divertirte con nosotros?</h3>
+    <ul class="homepage-list">
+        <li class="homepage-list-item">Pasa el mejor rato de tu vida</li>
+        <li class="homepage-list-item">Lee articulos interesantes</li>
+        <li class="homepage-list-item">Descubre nuevos hobbies</li>
+        <li class="homepage-list-item">Who let the dogs out?</li>
+    </ul>
+    <div class="registro">
+        <a href="/register" class="register-button">Registrate Aqui!</a>
+    </div>
+
+</div>
+<div class="frase-home">
     <div class="container">
-        <div class="row">
-            <div id="logo" class="col-xs-3">
-                <img src="./images/logo.png" alt="">
-            </div>
-            <div id="logIn" class="col-xs-1 offset-sm-7">
-                <a href="#" id="login-link" class="">LogIn</a>
-            </div>
-            <div id="register" class="col-xs-1">
-                <a href="#" id="register-link" class="">Register</a>
+        <div class="row frase">
+            <img src="/images/leanna.jpeg" class="user-img" alt="">
+            <div class="col-sm-4">
+                <p id="sp1">"El helado es mas rico cuando esta derretido"</p>
+                <p id="sp2">Erica Smith, comedora de helado</p>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
 
 {% block javascripts %}
